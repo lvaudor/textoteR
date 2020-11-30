@@ -29,19 +29,19 @@ The goal of textoteR is to help with the conversion of text corpora from one for
 
 ```{r}
 if(system.file(package="remotes")==""){
-  install.packages("remotes")
+  install.packages("remotes", build_vignettes=TRUE)
 }
 remotes::install_github("lvaudor/textoteR")
 ```
 
 
-## Example
+## Examples
+
+See vignette for more explanations and examples of use:
 
 
 ```{r example}
 library(textoteR)
-path_fables=system.file("extdata/fables",package="textoteR")
-path_fables
-txm_to_rtibble(from_dir=path_fables)
+vignette("textoteR")
 ```
 

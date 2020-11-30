@@ -85,6 +85,33 @@ cat(readLines("macron_covid_corpus/txt1.txt"))
 unlink("macron_covid_corpus",recursive=TRUE)
 ```
 
-# Example: from an IRaMuTeQ corpus
+# Example: from an R tibble
 
+The package contains an R data tibble LVtweets, with tweets, that contains both metadata variables and text.
+
+```{r}
+head(LVtweets)
+```
+
+Here is how you can export such data into an IRaMuTeQ or TXM format:
+
+
+```{r}
+rtibble_to_txm(rtibble=LVtweets,
+               to_dir="LVtweets_txm")
+list.files("LVtweets_txm")
+
+# remove directory:
+unlink("LVtweets_txm", recursive=TRUE)
+```
+
+
+```{r}
+rtibble_to_iramuteq(rtibble=LVtweets,
+                    filename="LVtweets_ira.txt")
+# remove file: 
+file.remove("LVtweets_ira.txt")
+```
+
+Note that tweets contain a certain number of special characters (e.g. emojis) and links that might cause TXM or IRaMuTeQ imports to fail. Such text data should probably be cleaned in R before conversion to TXM or IRaMuTeQ formats.
 
