@@ -29,9 +29,10 @@ The goal of textoteR is to help with the conversion of text corpora from one for
 
 ```{r}
 if(system.file(package="remotes")==""){
-  install.packages("remotes", build_vignettes=TRUE)
+  install.packages("remotes")
 }
-remotes::install_github("lvaudor/textoteR")
+remotes::install_github("lvaudor/textoteR",
+                        build_vignettes=TRUE)
 ```
 
 
