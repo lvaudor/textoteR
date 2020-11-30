@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# textoteR
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of textoteR is to help with the conversion of text corpora from one format to another. Supported formats are:
+
+- R (tibble)
+- TXM (directory with metadata.csv and multiple .txt files)
+- Iramuteq (single .txt)
+
+
+## Installation
+
+```{r}
+if(system.file(package="remotes")==""){
+  install.packages("remotes")
+}
+remotes::install_github("lvaudor/textoteR")
+```
+
+
+## Example
+
+
+```{r example}
+library(textoteR)
+path_fables=system.file("extdata/fables",package="textoteR")
+path_fables
+txm_to_rtibble(from_dir=path_fables)
+```
+
