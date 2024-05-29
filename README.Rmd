@@ -38,7 +38,7 @@ remotes::install_github("lvaudor/textoteR",
 
 ## Examples
 
-See vignette for more explanations and examples of use:
+Once installed, see the package's vignette for more explanations and examples of use:
 
 
 ```{r example}
