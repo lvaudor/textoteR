@@ -19,11 +19,12 @@ txm_to_iramuteq=function(from_dir,
     metadata=get_metadata(sourcetype="txm",
                           from_dir=from_dir,
                           encoding=encoding) %>%
-      format_metadata()
+      format_metadata() %>%
+      dplyr::arrange(id)
     textdata=get_textdata(sourcetype="txm",
                           from_dir=from_dir,
                           encoding=encoding) %>%
-      dplyr::arrange(text_id)
+      dplyr::arrange(id)
     write_to_iramuteq(metadata,
                       textdata,
                       to_dir=to_dir,
