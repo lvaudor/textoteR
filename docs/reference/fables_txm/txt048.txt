@@ -1,0 +1,4 @@
+😮 Neat lil' package by Benjamin Elbers…
+📦 "tidylog: provides feedback about basic dplyr operations" 
+GH repo: https://t.co/V5VWgjEiPH #rstats
+community thread: https://t.co/CJbwYk5KWP https://t.co/1xqnacsdBz

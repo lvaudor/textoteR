@@ -1,0 +1,1 @@
+@joelgombin @romain_francois @_ColinFay @talkR_FR ... et là, je me suis dit,"A quoi bon rajouter une couche intermédiaire?" Mais c'est vrai que pour partager un code, rebus sera sans doute 👍

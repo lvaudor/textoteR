@@ -11,7 +11,7 @@
 #' @examples
 #' txm_to_iramuteq(from_dir=system.file("extdata/fables",
 #'                                      package="textoteR"),
-#'                 filename="alltexts_iramuteq.txt")
+#'                 filename="data-raw/alltexts_iramuteq.txt")
 txm_to_iramuteq=function(from_dir,
                          to_dir=NULL,
                          filename="textot.txt",

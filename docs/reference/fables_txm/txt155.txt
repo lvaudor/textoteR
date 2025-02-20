@@ -1,0 +1,1 @@
+@ma_salmon @rencontres_R Well.... Sorry to disappoint but they probably WON'T include tips about metaphors 😅... Though I still have to figure out what I can fit exactly in 3 hours time (reasonably). To your mind, can I expect/ask participants to be familiar with dplyr/ggplot/(tidyr) in the first place??

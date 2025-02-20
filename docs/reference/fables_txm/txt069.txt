@@ -1,0 +1,5 @@
+Make a great #Rstats omelette with chives  👩‍🍳 using #pipes:  https://t.co/1kU4ePfxzg
+egg %&gt;% 
+  crack(add_seasoning) %&gt;%
+  beat() %&gt;%
+  cook(add_chives) -&gt; Et voilà! https://t.co/bMn9FTSOju

@@ -1,0 +1,1 @@
+Ah! ça c'est super utile si on est tidyverse-addict et fonctions/purrr-addict! 👏😻👏 Merci! ça devrait me libérer des select_(), filter_() et consorts! https://t.co/ky2yJqCCDU

@@ -1,0 +1,1 @@
+"Reducing friction in #Rstats to avoid #Excel" https://t.co/857JL4VrFJ A short anecdote while working with student projects. #tidyverse

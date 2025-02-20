@@ -1,0 +1,7 @@
+pandoc: '3.2'
+pkgdown: 2.0.9
+pkgdown_sha: ~
+articles:
+  textoteR: textoteR.html
+last_built: 2025-02-20T11:51Z
+

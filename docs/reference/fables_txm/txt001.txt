@@ -1,0 +1,1 @@
+Nouveau billet de blog: #Géocoder sous #rstats via une #API https://t.co/3bzgnL53X4. Pour ceux qui (comme moi il y a pas si longtemps) pensent d'abord 🍎 quand ils entendent "API"... https://t.co/vHv5KJEQv5

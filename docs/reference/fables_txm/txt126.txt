@@ -1,0 +1,1 @@
+@LeNematode @l0rentus Ah je sais pas, je pensais "data-wrangling" dans un sens assez large... par ex. quand on triture des données non-tabulaires pour les rendre tabulaires... Du coup j'aurais plutôt dit "arrangement", pour le coup.

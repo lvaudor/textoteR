@@ -1,0 +1,1 @@
+@fbahoken ben, je parle au sens large, des packages qui permettent de faire des cartes comme leaflet, ggmap, tmap, etc... Selon mes besoins (interactivité ou pas par ex.)/mes souvenirs (ya une cheatsheet/un site bien fait ou pas?)/la vitesse du vent et l'âge du capitaine, je varie!

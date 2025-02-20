@@ -1,0 +1,2 @@
+@hadleywickham @ma_salmon Oh wow! 🤖 
+sample(c("Give","me","my","week-end","back"),1500, replace=TRUE)

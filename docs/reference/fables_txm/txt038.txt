@@ -1,0 +1,1 @@
+@hugomflavio @ma_salmon Thanks for the feedback :-). I tried reinstalling from github and updating all packages and still have no problem... The error message probably means I should ungroup() my data at some point though... I'll try to fix this ASAP &amp; might get back to you in the process ;-)!

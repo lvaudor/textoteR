@@ -1,0 +1,1 @@
+@cboettig @RLesur Ah great! Indeed the small project would also include some time to actually just *think* about how to make the two data models fit together in a relatively smooth way ;-)

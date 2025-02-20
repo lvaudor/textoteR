@@ -1,0 +1,1 @@
+... I'm interested in explanations, if you have some! Encoding problems always drive me crazy and I don't know where to start (is the problem coming from the editor? from the console? from Windows? from my locale? from the tibbles' printing method? I'm at a loss 😒)

@@ -1,0 +1,1 @@
+using the httr package to retrieve data from apis in R https://t.co/3fXZC628JD via @Rbloggers
