@@ -2,6 +2,7 @@
 % Please edit documentation in R/textoteR.R
 \docType{package}
 \name{textoteR}
+\alias{textoteR-package}
 \alias{textoteR}
 \title{\code{textoteR} package}
 \description{
