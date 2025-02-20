@@ -29,5 +29,5 @@ Converts a TXM corpus directory to an Iramuteq corpus file.
 \examples{
 txm_to_iramuteq(from_dir=system.file("extdata/fables",
                                      package="textoteR"),
-                filename="alltexts_iramuteq.txt")
+                filename="data-raw/alltexts_iramuteq.txt")
 }

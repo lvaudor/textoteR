@@ -30,12 +30,20 @@ This package makes it easier to convert text corpora from one format to another.
 
 The package is provided with a **small example of TXM corpus** (multiple .txt files + one metadata.csv file): 9 famous fables of La Fontaine.
 
+Here I get the path to the corpus according to where the package is installed:
+
 ```{r}
 path_to_txm_corpus=system.file("extdata/fables",
                         package="textoteR")
+print(path_to_txm_corpus)
+```
+
+Here are the files in the directory:
+```{r}
 list.files(path_to_txm_corpus)
 ```
 
+Here is how you can convert this corpus into an R tibble:   
 
 ```{r}
 txm_to_rtibble(from_dir=path_to_txm_corpus)
