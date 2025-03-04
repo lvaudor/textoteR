@@ -2,7 +2,6 @@
 #' @description
 #' A package that converts text corpora sources from/to possible formats: TXM, Iramuteq, and R tibble.
 #' See the README on \href{https://github.com/lvaudor/mixr#readme}{GitHub}
-#' @docType package
 #' @name textoteR
 #' @importFrom dplyr %>%
 #' @importFrom rlang .data
