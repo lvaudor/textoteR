@@ -4,7 +4,7 @@
 \alias{replace_with}
 \title{Cleans some patterns in a text by replacing them.}
 \usage{
-replace_with(text, patterns_to_strings, from = NULL, to = NULL)
+replace_with(text, patterns_to_strings = NULL, from = NULL, to = NULL)
 }
 \arguments{
 \item{text}{the character vector to clean.}
@@ -22,7 +22,8 @@ the same text with patterns replaced by strings
 Cleans some patterns in a text by replacing them.
 }
 \examples{
-replace_with(c("This is an apple and this is an orange.",
-               "Here is a banana and this is an apple"),
-             from=c("apple","orange"),to=c("pear","kiwi"))
+replace_with(c("This is an apple and this is a banana.",
+               "Here is a banana and an apple"),
+             from=c("apple","banana"),
+             to=c("orange","kiwi"))
 }

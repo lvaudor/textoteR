@@ -28,13 +28,19 @@ get_textdata=function(sourcetype,
   }
   if(sourcetype=="iramuteq"){
     if(!dir.exists(from_dir)){stop("Directory from_dir does not exist")}
-    filename=paste0(from_dir,"/",filename)
-    if(!file.exists(filename)){stop("filename does not correspond to existing file")}
-    textot=readLines(filename)
+    cfilename=paste0(from_dir,"/",filename)
+    if(!file.exists(cfilename)){stop("filename does not correspond to existing file")}
+    textot=readLines(cfilename)
     textot=textot[textot!=""]
     textdata= textot %>%
       stringr::str_subset("\\*{4}", negate=TRUE) %>%
       tibble::tibble(text=.)
+    # need to associate text to id going through metadata
+    get_metadata(sourcetype="iramuteq",
+                 from_dir=from_dir,
+                 filename=filename,
+                 encoding=encoding)
+    textdata=bind_cols(textdata, metadata %>% dplyr::select(id))
   }
   if(sourcetype=="txm"){
     if(!dir.exists(from_dir)){stop("Directory from_dir does not exist")}
@@ -52,15 +58,16 @@ get_textdata=function(sourcetype,
   }
   if(sourcetype=="rtibble"){
     textdata=rtibble
-  }
-  if(!("id" %in% colnames(textdata))){
-    textdata=textdata %>%
-      dplyr::mutate(id=stringr::str_pad(1:dplyr::n(),
-                                        width=stringr::str_length(dplyr::n()),
-                                        pad="0")) %>%
-      dplyr::mutate(id=paste0("txt",.data$id))
+
+    if(!("id" %in% colnames(textdata))){
+      textdata=textdata %>%
+        dplyr::mutate(id=stringr::str_pad(1:dplyr::n(),
+                                          width=stringr::str_length(dplyr::n()),
+                                          pad="0")) %>%
+        dplyr::mutate(id=paste0("txt",.data$id))
+    }
   }
   textdata=textdata %>%
-    dplyr::select(.data$id,.data$text)
+    dplyr::select(id,text)
   return(textdata)
 }
