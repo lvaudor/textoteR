@@ -20,5 +20,6 @@ Imports:
     stringr,
     purrr,
     tibble,
-    rlang
+    rlang,
+    tidytext
 VignetteBuilder: knitr
