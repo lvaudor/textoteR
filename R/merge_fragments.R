@@ -13,14 +13,14 @@ merge_fragments=function(fragments){
   if(length(fragments)==0){return("")}
   if(length(fragments)==1){return(fragments)}
   for (i in 2:length(fragments)){
-    words1=str_split(fragments[i-1]," ")[[1]]
-    words2=str_split(fragments[i]," ")[[1]]
-    gap=tibble(word=c(words1,
-                      words2),
-               seg=c(rep(1,length(words1)),
-                     rep(2,length(words2))),
-               nw=c(1:length(words1),
-                    1:length(words2))
+    words1=stringr::str_split(fragments[i-1]," ")[[1]]
+    words2=stringr::str_split(fragments[i]," ")[[1]]
+    gap=tibble::tibble(word=c(words1,
+                              words2),
+                       seg=c(rep(1,length(words1)),
+                             rep(2,length(words2))),
+                       nw=c(1:length(words1),
+                            1:length(words2))
     ) %>%
       dplyr::group_by(word) %>%
       dplyr::mutate(n=n()) %>%
@@ -32,7 +32,7 @@ merge_fragments=function(fragments){
       dplyr::pull(gap) %>%
       max()
     if(gap<=0){words1_keep=words1}else{words1_keep=words1[1:gap]}
-    result=str_c(c(words1_keep,words2),collapse=" ")
+    result=stringr::str_c(c(words1_keep,words2),collapse=" ")
     fragments[i]=result
   }
   return(result)
