@@ -23,14 +23,15 @@ merge_fragments=function(fragments){
                             1:length(words2))
     ) %>%
       dplyr::group_by(word) %>%
-      dplyr::mutate(n=n()) %>%
+      dplyr::mutate(n=dplyr::n()) %>%
       dplyr::filter(n==2) %>%
       dplyr::summarise(gap=-(nw[2]-nw[1])) %>%
       dplyr::group_by(gap) %>%
       dplyr::tally() %>%
       dplyr::top_n(1,n) %>%
-      dplyr::pull(gap) %>%
-      max()
+      dplyr::pull(gap)
+    if(length(gap)==0){gap=-1}
+    gap=max(gap)
     if(gap<=0){words1_keep=words1}else{words1_keep=words1[1:gap]}
     result=stringr::str_c(c(words1_keep,words2),collapse=" ")
     fragments[i]=result
